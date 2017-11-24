@@ -1,0 +1,11 @@
+C:\Users\ntt\source\repos\kiet\kiet\bin\Debug\kiet.exe.config
+C:\Users\ntt\source\repos\kiet\kiet\bin\Debug\kiet.exe
+C:\Users\ntt\source\repos\kiet\kiet\bin\Debug\kiet.pdb
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.csprojResolveAssemblyReference.cache
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.dsMonan.resources
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.Properties.Resources.resources
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.csproj.GenerateResource.Cache
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.csproj.CoreCompileInputs.cache
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.exe
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.pdb
+C:\Users\ntt\source\repos\kiet\kiet\obj\Debug\kiet.Form1.resources
