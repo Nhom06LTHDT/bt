@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BT10.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,9 +40,9 @@ namespace BT10
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txbUsername.Text;
-            string pass = txbPassword.Text;
-            if (login(username, pass))
+            string userName = txbUsername.Text;
+            string passWord = txbPassword.Text;
+            if (login(userName, passWord))
             {
                 Manager fQL = new Manager();
                 this.Hide();
@@ -57,7 +58,7 @@ namespace BT10
 
         bool login(string user, string pass)
         {
-            return false;
+            return AccountDAO.Instance.Login(user, pass);
         }
 
         private void username_TextChanged(object sender, EventArgs e)
