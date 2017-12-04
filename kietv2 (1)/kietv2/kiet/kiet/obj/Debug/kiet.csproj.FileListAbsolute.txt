@@ -61,3 +61,13 @@ C:\Users\Blue\Downloads\kietv2\kiet\kiet\obj\Debug\kiet.csproj.GenerateResource.
 C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\bin\Debug\kiet.exe.config
 C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.exe
 C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.pdb
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\bin\Debug\kiet.exe
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\bin\Debug\kiet.pdb
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.csprojResolveAssemblyReference.cache
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.dsMonan.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.Form1.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.Form2.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.Properties.Resources.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.QuanLyDatHang.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.WebDatHang.resources
+C:\Users\K\Downloads\kietv2 (1)\kietv2\kiet\kiet\obj\Debug\kiet.csproj.GenerateResource.Cache
