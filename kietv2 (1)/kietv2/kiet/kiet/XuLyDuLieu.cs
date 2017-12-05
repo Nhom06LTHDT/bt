@@ -27,5 +27,12 @@ namespace kiet
             OleDbCommandBuilder builder = new OleDbCommandBuilder(adapter);
             adapter.Update(dt);
         }
+        public static DataTable docDuLieu(String sql)
+        {
+            DataTable dt = new DataTable();
+            OleDbDataAdapter adapter = new OleDbDataAdapter(sql, connectionString);
+            adapter.FillSchema(dt, SchemaType.Source);
+            return dt;
+        }
     }
 }

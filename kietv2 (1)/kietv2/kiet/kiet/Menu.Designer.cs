@@ -28,32 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.LBma = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.LBma = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 103);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(451, 238);
-            this.dataGridView3.TabIndex = 19;
-            // 
-            // LBma
-            // 
-            this.LBma.AutoSize = true;
-            this.LBma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBma.Location = new System.Drawing.Point(12, 55);
-            this.LBma.Name = "LBma";
-            this.LBma.Size = new System.Drawing.Size(214, 24);
-            this.LBma.TabIndex = 18;
-            this.LBma.Text = "Món ăn / Nước uống :";
             // 
             // menuStrip2
             // 
@@ -62,8 +44,8 @@
             this.toolStripComboBox1});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(506, 27);
-            this.menuStrip2.TabIndex = 30;
+            this.menuStrip2.Size = new System.Drawing.Size(673, 27);
+            this.menuStrip2.TabIndex = 33;
             this.menuStrip2.Text = "menuStrip2";
             // 
             // toolStripTextBox1
@@ -85,22 +67,40 @@
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.Text = "(Đồ ăn/Đồ uống)";
-            this.toolStripComboBox1.TextChanged += new System.EventHandler(this.toolStripComboBox1_TextChanged);
+            this.toolStripComboBox1.TextChanged += new System.EventHandler(this.toolStripComboBox1_TextChanged_1);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(12, 147);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(451, 238);
+            this.dataGridView3.TabIndex = 32;
+            // 
+            // LBma
+            // 
+            this.LBma.AutoSize = true;
+            this.LBma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBma.Location = new System.Drawing.Point(12, 99);
+            this.LBma.Name = "LBma";
+            this.LBma.Size = new System.Drawing.Size(214, 24);
+            this.LBma.TabIndex = 31;
+            this.LBma.Text = "Món ăn / Nước uống :";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 353);
+            this.ClientSize = new System.Drawing.Size(673, 429);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.LBma);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,10 +108,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label LBma;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label LBma;
     }
 }

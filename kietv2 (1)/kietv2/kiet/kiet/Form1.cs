@@ -26,8 +26,6 @@ namespace kiet
         {
             Form2 f2 = new Form2();
             f2.Show();
-            Form1 f1 = new Form1();
-            f1.Close();
         }
     }
 }

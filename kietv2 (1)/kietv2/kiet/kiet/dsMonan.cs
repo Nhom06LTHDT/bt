@@ -19,6 +19,9 @@ namespace kiet
         DataTable MonChay;
         DataTable DoanhthuCN;
         DataTable SLDH;
+        //------
+        DataTable dsKhach;
+        DataView dsKhachView;
 
         public dsMonan()
         {
@@ -33,6 +36,11 @@ namespace kiet
             MonChay = DocMonchay();
             DoanhthuCN = Doanhthucn();
             SLDH = Donhang();
+            //-----
+            dsKhach = XuLyDuLieu.docBang("Select * from ThongTinKhach");
+            dsKhachView = new DataView(dsKhach);
+            dgvdsKhachHang.DataSource = dsKhachView;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -133,11 +141,15 @@ namespace kiet
 
         private void BT1_Click(object sender, EventArgs e)
         {
-            DataRow them = MonBo.NewRow();
-            them["Loai"] = loai.Text;
-            them["Tên món ăn"] = tenmon.Text;
-            them["Đơn vị"] = donvi.Text;
-            them["Giá tiền"] = giatien.Text;
+            //DataRow dh = MonBo.NewRow();
+            //dh["Loai"] = loai.Text;
+            //dh["Tên món ăn"] = tenmon.Text;
+            //dh["Đơn vị"] = donvi.Text;
+            //dh["Giá tiền"] = giatien.Text;
+
+            //MonBo.Rows.Add(dh);
+
+            //XuLyDuLieu.ghiBang("MonBo", MonBo);
 
         }
 
@@ -168,6 +180,42 @@ namespace kiet
         {
             dataGridView5.DataSource = SLDH;
             SLDH.DefaultView.RowFilter = string.Format("CHINHANH LIKE '%{0}%'", comboBox4.Text);
+        }
+
+        private void tbTimSDT_TextChanged(object sender, EventArgs e)
+        {
+            if (tbTimTen.Text == "")
+            {
+                dsKhachView.RowFilter = "";
+            }
+            else
+            {
+                String str = String.Format("HoTenKhach like '%{0}%'", tbTimTen.Text);
+                dsKhachView.RowFilter = str;
+            }
+        }
+
+        private void bt_themThongtin_Click(object sender, EventArgs e)
+        {
+            DataRow dh = dsKhach.NewRow();
+            dh["HoTenKhach"] = tbTenKhach.Text;
+            dh["DiaCHi"] = tbDiaChi.Text;
+            dh["SDT"] = tbSDT.Text;
+            dh["SoLanDat"] = TT_SoLan.Text;
+
+            dsKhach.Rows.Add(dh);
+
+            XuLyDuLieu.ghiBang("ThongTinKhach", dsKhach);
+        }
+
+        private void bt_xoaThongtin_Click(object sender, EventArgs e)
+        {
+            if (dgvdsKhachHang.SelectedRows.Count > 0)
+            {
+                DataRow dh = ((DataRowView)dgvdsKhachHang.SelectedRows[0].DataBoundItem).Row;
+                dh.Delete();
+                XuLyDuLieu.ghiBang("ThongTinKhach", dsKhach);
+            }
         }
     }
 }
