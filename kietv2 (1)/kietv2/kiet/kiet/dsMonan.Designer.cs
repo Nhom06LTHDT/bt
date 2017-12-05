@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("1,000,000,000");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("1,400,000,000");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Chi Nhánh A");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Chi Nhánh B");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Chi Nhánh C");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Chi Nhánh D");
             this.TaiKhoan = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
@@ -61,22 +55,13 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.TongDoanhThu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.DTCN = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.SLDonHang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SLDonHangTaiCho = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SLDonHangGiaoDi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SLDonHangMangVe = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SLDonHangTongDai = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -91,6 +76,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
@@ -108,7 +94,6 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
             this.TaiKhoan.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -117,7 +102,9 @@
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -378,114 +365,45 @@
             this.tabControl1.Location = new System.Drawing.Point(6, 16);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(592, 331);
+            this.tabControl1.Size = new System.Drawing.Size(664, 331);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.comboBox5);
-            this.tabPage4.Controls.Add(this.listView3);
-            this.tabPage4.Controls.Add(this.comboBox3);
-            this.tabPage4.Controls.Add(this.treeView1);
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.DTCN);
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(584, 305);
+            this.tabPage4.Size = new System.Drawing.Size(656, 305);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Doanh Thu";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // dataGridView4
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "2016",
-            "2017",
-            "2018",
-            "2019"});
-            this.comboBox5.Location = new System.Drawing.Point(402, 16);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(71, 24);
-            this.comboBox5.TabIndex = 12;
-            this.comboBox5.Text = "(NĂM)";
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(12, 77);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(532, 222);
+            this.dataGridView4.TabIndex = 11;
             // 
-            // listView3
+            // DTCN
             // 
-            this.listView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.TongDoanhThu});
-            this.listView3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView3.GridLines = true;
-            this.listView3.HideSelection = false;
-            this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3,
-            listViewItem4});
-            this.listView3.Location = new System.Drawing.Point(243, 72);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(195, 230);
-            this.listView3.TabIndex = 11;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
-            // 
-            // TongDoanhThu
-            // 
-            this.TongDoanhThu.Text = "Tổng Doanh Thu";
-            this.TongDoanhThu.Width = 190;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.comboBox3.Location = new System.Drawing.Point(277, 16);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(84, 24);
-            this.comboBox3.TabIndex = 10;
-            this.comboBox3.Text = "(THÁNG)";
-            // 
-            // treeView1
-            // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeView1.Location = new System.Drawing.Point(12, 96);
-            this.treeView1.Name = "treeView1";
-            treeNode5.Name = "Chi Nhánh A";
-            treeNode5.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode5.Text = "Chi Nhánh A";
-            treeNode6.Name = "Chi Nhánh B";
-            treeNode6.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode6.Text = "Chi Nhánh B";
-            treeNode7.Name = "Chi Nhánh C";
-            treeNode7.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode7.Text = "Chi Nhánh C";
-            treeNode8.Name = "Chi Nhánh D";
-            treeNode8.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode8.Text = "Chi Nhánh D";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8});
-            this.treeView1.Size = new System.Drawing.Size(225, 206);
-            this.treeView1.TabIndex = 9;
+            this.DTCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTCN.FormattingEnabled = true;
+            this.DTCN.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.DTCN.Location = new System.Drawing.Point(277, 16);
+            this.DTCN.Name = "DTCN";
+            this.DTCN.Size = new System.Drawing.Size(148, 24);
+            this.DTCN.TabIndex = 10;
+            this.DTCN.Text = "CHI NHÁNH";
+            this.DTCN.TextChanged += new System.EventHandler(this.DTCN_TextChanged);
             // 
             // label9
             // 
@@ -499,16 +417,24 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.dataGridView5);
             this.tabPage5.Controls.Add(this.comboBox4);
             this.tabPage5.Controls.Add(this.label3);
-            this.tabPage5.Controls.Add(this.listView2);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(584, 305);
+            this.tabPage5.Size = new System.Drawing.Size(656, 305);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Số Lượng Đơn Hàng";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(32, 90);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(580, 192);
+            this.dataGridView5.TabIndex = 14;
             // 
             // comboBox4
             // 
@@ -524,6 +450,7 @@
             this.comboBox4.Size = new System.Drawing.Size(102, 24);
             this.comboBox4.TabIndex = 13;
             this.comboBox4.Text = "(chi nhánh)";
+            this.comboBox4.TextChanged += new System.EventHandler(this.comboBox4_TextChanged);
             // 
             // label3
             // 
@@ -534,57 +461,6 @@
             this.label3.Size = new System.Drawing.Size(161, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "Chọn Chi Nhánh :";
-            // 
-            // listView2
-            // 
-            this.listView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.SLDonHang,
-            this.SLDonHangTaiCho,
-            this.SLDonHangGiaoDi,
-            this.SLDonHangMangVe,
-            this.SLDonHangTongDai,
-            this.columnHeader3});
-            this.listView2.GridLines = true;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(0, 66);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(578, 218);
-            this.listView2.TabIndex = 11;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
-            // 
-            // SLDonHang
-            // 
-            this.SLDonHang.Text = "Số Lượng Đơn Hàng";
-            this.SLDonHang.Width = 113;
-            // 
-            // SLDonHangTaiCho
-            // 
-            this.SLDonHangTaiCho.Text = "Đơn Hàng Tại Chổ";
-            this.SLDonHangTaiCho.Width = 101;
-            // 
-            // SLDonHangGiaoDi
-            // 
-            this.SLDonHangGiaoDi.Text = " Đơn Hàng Giao Đi";
-            this.SLDonHangGiaoDi.Width = 104;
-            // 
-            // SLDonHangMangVe
-            // 
-            this.SLDonHangMangVe.Text = " Đơn Hàng Mang Về";
-            this.SLDonHangMangVe.Width = 110;
-            // 
-            // SLDonHangTongDai
-            // 
-            this.SLDonHangTongDai.Text = "Đơn Đặt Hàng";
-            this.SLDonHangTongDai.Width = 88;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Công nợ";
             // 
             // tabPage6
             // 
@@ -603,7 +479,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(584, 305);
+            this.tabPage6.Size = new System.Drawing.Size(656, 305);
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Thêm chi nhánh mới";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -723,6 +599,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tổng doanh thu";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(141, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(302, 42);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "NHÀ HÀNG ABC";
             // 
             // dataGridView1
             // 
@@ -891,16 +777,6 @@
             this.columnHeader9.Text = "Tổng tiền tích lũy";
             this.columnHeader9.Width = 101;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 42);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "NHÀ HÀNG ABC";
-            // 
             // dsMonan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -923,8 +799,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -953,20 +831,11 @@
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ColumnHeader TongDoanhThu;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ComboBox DTCN;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ColumnHeader SLDonHang;
-        private System.Windows.Forms.ColumnHeader SLDonHangTaiCho;
-        private System.Windows.Forms.ColumnHeader SLDonHangGiaoDi;
-        private System.Windows.Forms.ColumnHeader SLDonHangMangVe;
-        private System.Windows.Forms.ColumnHeader SLDonHangTongDai;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label10;
@@ -981,8 +850,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -1015,5 +882,7 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView5;
     }
 }

@@ -16,8 +16,9 @@ namespace kiet
     {
         DataTable ds;
         DataTable MonBo;
-        DataView dsMonBo;
         DataTable MonChay;
+        DataTable DoanhthuCN;
+        DataTable SLDH;
 
         public dsMonan()
         {
@@ -30,7 +31,8 @@ namespace kiet
             dataGridView1.DataSource = ds;
             MonBo = Docmon();
             MonChay = DocMonchay();
-
+            DoanhthuCN = Doanhthucn();
+            SLDH = Donhang();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -89,6 +91,35 @@ namespace kiet
             oleDataAdapter.Fill(dt);
             return dt;
         }
+
+        public DataTable Doanhthucn()
+        {
+            OleDbConnection oleConnection = new OleDbConnection();
+            oleConnection.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-I9JAO4N;Integrated Security=SSPI;Initial Catalog=TongDoanhThu";
+            OleDbCommand oleSeclectCommand = new OleDbCommand();
+            oleSeclectCommand.Connection = oleConnection;
+            oleSeclectCommand.CommandText = "Select * From DoanhThuCN";
+            OleDbDataAdapter oleDataAdapter = new OleDbDataAdapter();
+            oleDataAdapter.SelectCommand = oleSeclectCommand;
+            DataTable dt = new DataTable();
+            oleDataAdapter.Fill(dt);
+            return dt;
+        }
+
+        public DataTable Donhang()
+        {
+            OleDbConnection oleConnection = new OleDbConnection();
+            oleConnection.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-I9JAO4N;Integrated Security=SSPI;Initial Catalog=TongDoanhThu";
+            OleDbCommand oleSeclectCommand = new OleDbCommand();
+            oleSeclectCommand.Connection = oleConnection;
+            oleSeclectCommand.CommandText = "Select * From SLDH";
+            OleDbDataAdapter oleDataAdapter = new OleDbDataAdapter();
+            oleDataAdapter.SelectCommand = oleSeclectCommand;
+            DataTable dt = new DataTable();
+            oleDataAdapter.Fill(dt);
+            return dt;
+        }
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -125,6 +156,18 @@ namespace kiet
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void DTCN_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView4.DataSource = DoanhthuCN;
+            DoanhthuCN.DefaultView.RowFilter = string.Format("CHINHANH LIKE '%{0}%'", DTCN.Text);
+        }
+
+        private void comboBox4_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView5.DataSource = SLDH;
+            SLDH.DefaultView.RowFilter = string.Format("CHINHANH LIKE '%{0}%'", comboBox4.Text);
         }
     }
 }
