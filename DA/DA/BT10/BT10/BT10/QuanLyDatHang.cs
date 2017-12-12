@@ -58,20 +58,30 @@ namespace kiet
 
             
 
-            dsMonAn = XuLyDuLieu.docBang("Select * from dsMon");
+            /*dsMonAn = XuLyDuLieu.docBang("Select * from dsMon");
+            dsMonAnView = new DataView(dsMonAn);
+            dgvThucDon.DataSource = dsMonAnView;*/
+
+            dsMonAn = XuLyDuLieu.docBang("Select * from MonBo");
             dsMonAnView = new DataView(dsMonAn);
             dgvThucDon.DataSource = dsMonAnView;
 
             //dsMonChon = XuLyDuLieu.docBang("Select *from MonDaChon");
             //dgvCacMonChon.DataSource = dsMonChon;
 
+            
+
+            //dsDonHang = XuLyDuLieu.docBang("Select * from HoaDon");
+            //dsDonHangView = new DataView(dsDonHang);
+            //dgvdsDonHang3.DataSource = dsDonHangView;
+
             dsDonHang = XuLyDuLieu.docBang("Select *from HoaDon");
             dgvdsDonHang2.DataSource = dsDonHang;
             dgvdsDonHang5.DataSource = dsDonHang;
-
-            dsDonHang = XuLyDuLieu.docBang("Select * from HoaDon");
             dsDonHangView = new DataView(dsDonHang);
             dgvdsDonHang3.DataSource = dsDonHangView;
+            dgvdsDSHonHang.DataSource = dsDonHang;
+
 
 
 
@@ -386,6 +396,8 @@ namespace kiet
             dsDonHang.Rows.Add(dh);
 
             XuLyDuLieu.ghiBang("HoaDon", dsDonHang);
+
+            MessageBox.Show("Bạn Đã Tạo Đơn Hàng Thành Công!!", "Thong Bao", MessageBoxButtons.OK);
         }
 
         private void lbDHC_Click(object sender, EventArgs e)
@@ -443,6 +455,8 @@ namespace kiet
                 dh["HD_Gia"] = TD_Gia.Text;
                 dh["HD_TinhTrang"] = TD_TinhTrang.Text;
                 XuLyDuLieu.ghiBang("HoaDon", dsDonHang);
+
+                MessageBox.Show("Đã thay đổi tình trạng đơn hàng", "Thong Bao", MessageBoxButtons.OK);
             }
             else
             {

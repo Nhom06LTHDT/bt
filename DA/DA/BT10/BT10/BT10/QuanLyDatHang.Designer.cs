@@ -247,7 +247,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(591, 245);
+            this.label48.Location = new System.Drawing.Point(702, 232);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(42, 16);
             this.label48.TabIndex = 88;
@@ -255,7 +255,7 @@
             // 
             // TD_SDT
             // 
-            this.TD_SDT.Location = new System.Drawing.Point(760, 239);
+            this.TD_SDT.Location = new System.Drawing.Point(871, 226);
             this.TD_SDT.Name = "TD_SDT";
             this.TD_SDT.Size = new System.Drawing.Size(152, 22);
             this.TD_SDT.TabIndex = 87;
@@ -263,7 +263,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(591, 133);
+            this.label51.Location = new System.Drawing.Point(702, 120);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(101, 16);
             this.label51.TabIndex = 86;
@@ -272,7 +272,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(591, 161);
+            this.label20.Location = new System.Drawing.Point(702, 148);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 16);
             this.label20.TabIndex = 86;
@@ -281,7 +281,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(591, 189);
+            this.label19.Location = new System.Drawing.Point(702, 176);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(57, 16);
             this.label19.TabIndex = 86;
@@ -290,7 +290,7 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(591, 217);
+            this.label49.Location = new System.Drawing.Point(702, 204);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(146, 16);
             this.label49.TabIndex = 86;
@@ -298,28 +298,28 @@
             // 
             // TD_MaDH
             // 
-            this.TD_MaDH.Location = new System.Drawing.Point(760, 127);
+            this.TD_MaDH.Location = new System.Drawing.Point(871, 114);
             this.TD_MaDH.Name = "TD_MaDH";
             this.TD_MaDH.Size = new System.Drawing.Size(152, 22);
             this.TD_MaDH.TabIndex = 85;
             // 
             // TD_MaCN
             // 
-            this.TD_MaCN.Location = new System.Drawing.Point(760, 155);
+            this.TD_MaCN.Location = new System.Drawing.Point(871, 142);
             this.TD_MaCN.Name = "TD_MaCN";
             this.TD_MaCN.Size = new System.Drawing.Size(152, 22);
             this.TD_MaCN.TabIndex = 85;
             // 
             // TD_DiaChi
             // 
-            this.TD_DiaChi.Location = new System.Drawing.Point(760, 183);
+            this.TD_DiaChi.Location = new System.Drawing.Point(871, 170);
             this.TD_DiaChi.Name = "TD_DiaChi";
             this.TD_DiaChi.Size = new System.Drawing.Size(152, 22);
             this.TD_DiaChi.TabIndex = 85;
             // 
             // TD_Ten
             // 
-            this.TD_Ten.Location = new System.Drawing.Point(760, 211);
+            this.TD_Ten.Location = new System.Drawing.Point(871, 198);
             this.TD_Ten.Name = "TD_Ten";
             this.TD_Ten.Size = new System.Drawing.Size(152, 22);
             this.TD_Ten.TabIndex = 85;
@@ -327,7 +327,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(591, 273);
+            this.label50.Location = new System.Drawing.Point(702, 260);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(79, 16);
             this.label50.TabIndex = 84;
@@ -335,7 +335,7 @@
             // 
             // TD_Gia
             // 
-            this.TD_Gia.Location = new System.Drawing.Point(760, 267);
+            this.TD_Gia.Location = new System.Drawing.Point(871, 254);
             this.TD_Gia.Name = "TD_Gia";
             this.TD_Gia.Size = new System.Drawing.Size(152, 22);
             this.TD_Gia.TabIndex = 83;
@@ -348,7 +348,7 @@
             "Chưa Thanh Toán",
             "Đã Thanh Toán",
             "Hủy"});
-            this.TD_TinhTrang.Location = new System.Drawing.Point(760, 301);
+            this.TD_TinhTrang.Location = new System.Drawing.Point(871, 288);
             this.TD_TinhTrang.Name = "TD_TinhTrang";
             this.TD_TinhTrang.Size = new System.Drawing.Size(152, 24);
             this.TD_TinhTrang.TabIndex = 42;
@@ -358,7 +358,7 @@
             this.btThayTinhTrang.BackColor = System.Drawing.Color.HotPink;
             this.btThayTinhTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btThayTinhTrang.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btThayTinhTrang.Location = new System.Drawing.Point(591, 367);
+            this.btThayTinhTrang.Location = new System.Drawing.Point(702, 354);
             this.btThayTinhTrang.Name = "btThayTinhTrang";
             this.btThayTinhTrang.Size = new System.Drawing.Size(146, 53);
             this.btThayTinhTrang.TabIndex = 41;
@@ -370,7 +370,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(591, 304);
+            this.label21.Location = new System.Drawing.Point(702, 291);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(83, 16);
             this.label21.TabIndex = 40;
@@ -381,7 +381,7 @@
             this.dgvdsDonHang5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdsDonHang5.Location = new System.Drawing.Point(38, 85);
             this.dgvdsDonHang5.Name = "dgvdsDonHang5";
-            this.dgvdsDonHang5.Size = new System.Drawing.Size(510, 271);
+            this.dgvdsDonHang5.Size = new System.Drawing.Size(630, 271);
             this.dgvdsDonHang5.TabIndex = 34;
             // 
             // label18
@@ -1453,7 +1453,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Californian FB", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(367, 42);
+            this.label27.Location = new System.Drawing.Point(328, 43);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(73, 16);
             this.label27.TabIndex = 79;
@@ -1571,7 +1571,7 @@
             // tb_timThongtin
             // 
             this.tb_timThongtin.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.tb_timThongtin.Location = new System.Drawing.Point(446, 39);
+            this.tb_timThongtin.Location = new System.Drawing.Point(407, 40);
             this.tb_timThongtin.Name = "tb_timThongtin";
             this.tb_timThongtin.Size = new System.Drawing.Size(100, 22);
             this.tb_timThongtin.TabIndex = 40;
@@ -1621,7 +1621,7 @@
             this.dgvdsKhach2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdsKhach2.Location = new System.Drawing.Point(36, 67);
             this.dgvdsKhach2.Name = "dgvdsKhach2";
-            this.dgvdsKhach2.Size = new System.Drawing.Size(510, 271);
+            this.dgvdsKhach2.Size = new System.Drawing.Size(471, 271);
             this.dgvdsKhach2.TabIndex = 35;
             // 
             // label10

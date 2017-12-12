@@ -37,7 +37,7 @@ namespace kiet
             DoanhthuCN = Doanhthucn();
             SLDH = Donhang();
             //-----
-            dsKhach = XuLyDuLieu.docBang("Select * from ThongTinKhach");
+            dsKhach = XuLyDuLieu.docBang("select * from thongtinkhach");
             dsKhachView = new DataView(dsKhach);
             dgvdsKhachHang.DataSource = dsKhachView;
 
@@ -78,7 +78,7 @@ namespace kiet
             oleConnection.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-I9JAO4N;Integrated Security=SSPI;Initial Catalog=QuanLyQuanAn";
             OleDbCommand oleSeclectCommand = new OleDbCommand();
             oleSeclectCommand.Connection = oleConnection;
-            oleSeclectCommand.CommandText = "Select * From MonBo";
+            oleSeclectCommand.CommandText = "Select * From MonAn";
             OleDbDataAdapter oleDataAdapter = new OleDbDataAdapter();
             oleDataAdapter.SelectCommand = oleSeclectCommand;
             DataTable dt = new DataTable();
@@ -149,8 +149,9 @@ namespace kiet
 
             MonBo.Rows.Add(dh);
 
-            XuLyDuLieu2.ghiBang("MonBo", MonBo);
-
+            XuLyDuLieu2.ghiBang("MonAn", MonBo);
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -158,8 +159,9 @@ namespace kiet
             while (dataGridView3.SelectedRows.Count > 0)
             {
                 dataGridView3.Rows.RemoveAt(dataGridView3.SelectedRows[0].Index);
+                
             }
-            XuLyDuLieu2.ghiBang("MonBo", MonBo);
+            XuLyDuLieu2.ghiBang("MonAn",MonBo);
         }
 
         private void toolStripComboBox1_TextChanged(object sender, EventArgs e)
@@ -220,6 +222,106 @@ namespace kiet
                 dh.Delete();
                 XuLyDuLieu.ghiBang("ThongTinKhach", dsKhach);
             }
+        }
+
+        private void dgvdsKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void donvi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void themABC_Click_1(object sender, EventArgs e)
+        {
+            DataRow dh = ds.NewRow();
+            dh["TIME"] = time.Text;
+            dh["TongDoanhThu"] = doanhthu.Text;
+            dh["ChiNhanhCaoNhat"] = caonhat.Text;
+            dh["DoanhThuChiNhanh"] = CN.Text;
+
+            ds.Rows.Add(dh);
+
+            XuLyDuLieu2.ghiBang("DoanhThu", ds);
+        }
+
+        private void XoaABC_Click(object sender, EventArgs e)
+        {
+            while (dataGridView1.SelectedRows.Count > 0)
+            {
+                dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+
+            }
+            XuLyDuLieu2.ghiBang("DoanhThu", ds);
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThemChay_Click(object sender, EventArgs e)
+        {
+            DataRow dh = MonChay.NewRow();
+            dh["ChiNhanh"] = CN1.Text;
+            dh["TIME"] = time1.Text;
+            dh["TenMonAn"] = TenMA1.Text;
+            dh["DonVi"] = DonVi1.Text;
+            dh["SoLuong"] = SoLg.Text;
+
+            MonChay.Rows.Add(dh);
+
+            XuLyDuLieu2.ghiBang("MonChay", MonChay);
+        }
+
+        private void XoaChay_Click(object sender, EventArgs e)
+        {
+            while (dataGridView2.SelectedRows.Count > 0)
+            {
+                dataGridView2.Rows.RemoveAt(dataGridView2.SelectedRows[0].Index);
+
+            }
+            XuLyDuLieu2.ghiBang("MonChay", MonChay);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataRow dh = DoanhthuCN.NewRow();
+            dh["ChiNhanh"] = CN2.Text;
+            dh["TIME"] = time2.Text;
+            dh["TienBan"] = tienban.Text;
+            dh["PhiPhatSinh"] = phatsinh.Text;
+
+            DoanhthuCN.Rows.Add(dh);
+
+            XuLyDuLieu2.ghiBang("DoanhThuCN", DoanhthuCN);
+        }
+
+        private void xoa_bt3_Click(object sender, EventArgs e)
+        {
+            while (dataGridView4.SelectedRows.Count > 0)
+            {
+                dataGridView4.Rows.RemoveAt(dataGridView4.SelectedRows[0].Index);
+
+            }
+            XuLyDuLieu2.ghiBang("DoanhThuCN", DoanhthuCN);
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DTCN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
